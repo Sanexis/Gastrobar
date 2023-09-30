@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: top;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: rgb(107, 107, 107);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gastrobar-logo {
+  width: 300px;
+  height: 300px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: perspective(5000px) rotateY(var(--rotateY)) rotateX(var(--rotateX));
+  transform-style: preserve-3d;
+  transition: box-shadow 0.3s;
+}
+.gastrobar-logo:hover {
+  box-shadow: 0px 0px 100px -15px rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+.gastrobar-logo .gastrobar-face {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #000000;
+}
+.gastrobar-logo .side-back {
+  transform: rotateY(180deg) translateZ(49px);
+}
+.gastrobar-logo .side-left {
+  transform: rotateY(260deg) translateZ(150px);
+  width: 50px;
+}
+.gastrobar-logo .side-right {
+  transform: rotateY(100deg) translateZ(150px);
+  width: 50px;
+}
+.gastrobar-logo .side-top {
+  transform: rotateX(90deg) translateY(-25px) translateZ(150px);
+  height: 50px;
+}
+.gastrobar-logo .side-bottom {
+  transform: rotateX(-90deg) translateY(25px) translateZ(150px);
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
